@@ -3,18 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+    <title>Your Name | ML Engineer</title>
     <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --border-color: #21262d;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
-            margin-top: 50px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        p {
+            color: var(--text-main);
+            font-size: 1rem;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .item-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+
+        .tags {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        .links a {
+            margin-right: 16px;
         }
     </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my brand new GitHub Pages website.</p>
+
+    <div class="container">
+        <header>
+            <h1>Your Name</h1>
+            <p class="subtitle">Machine Learning Engineer</p>
+            <p>
+                I build and scale intelligent systems. My work focuses on [Core Area, e.g., Large Language Model engineering, model evaluation frameworks, or scalable infrastructure]. Interested in the intersection of robust architectures and practical AI deployment.
+            </p>
+            <div class="links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <div class="item-title">Staff Machine Learning Engineer @ Company Name</div>
+                        <div class="item-desc">Led the development of automated evaluation systems and foundation core models for system integrity.</div>
+                    </li>
+                    <li>
+                        <div class="item-title">Senior ML Engineer @ Previous Company</div>
+                        <div class="item-desc">Designed and deployed heterogeneous signal fusion systems combining structured actor data and content features.</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Selected Projects</h2>
+                <ul>
+                    <li>
+                        <div class="item-title"><a href="#">LLM Evaluation Framework</a></div>
+                        <div class="item-desc">An automated config-driven pipeline to benchmark large language model alignment and performance metrics.</div>
+                        <div class="tags">Python • PyTorch • Transformers</div>
+                    </li>
+                    <li>
+                        <div class="item-title"><a href="#">Heterogeneous Signal Fusion Engine</a></div>
+                        <div class="item-desc">A high-throughput inference service fusing graph-based actor signals with raw content vectors for real-time scoring.</div>
+                        <div class="tags">C++ • Go • Ray</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="interests">
+                <h2>Technical Interests</h2>
+                <p>Transformer architectures, reinforcement learning from human feedback (RLHF), causal inference, and optimizing local model execution on edge hardware.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Your Name. Built with minimalist HTML/CSS.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
